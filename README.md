@@ -9,9 +9,7 @@ Debian: https://docs.docker.com/install/linux/docker-ce/debian/
 Installing Docker  
 The Docker docs suggest setting up a Docker repository to install and update from.   
 This is where you should start:  
-https://docs.docker.com/install/linux/docker-ce/ubuntu/#set-up-the-repository  
-After completing the installation steps, test out Docker:  
-sudo docker run hello-world  
+https://docs.docker.com/install/linux/docker-ce/ubuntu/#set-up-the-repository    
 This should download and run the test container printing "hello world" to your console.   
 Installing Docker Compose  
 Unlike the Mac and Windows Docker Desktop versions, we must manually install Docker Compose. See the instructions for the installation steps (Click on the tab for Linux)  
