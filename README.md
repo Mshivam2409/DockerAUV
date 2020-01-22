@@ -48,7 +48,7 @@ To run a terminal in the same container :
 ```
 docker exec -it container_id bash
 ```
-Remember you'll have to source the environment variables for every new terminal CUURENTLY. This will be fixed in future.
+Remember you'll have to source the environment variables for every new terminal CURRENTLY. This will be fixed in future.
 ```
 cd catkin_ws
 source devel/setup.bash
