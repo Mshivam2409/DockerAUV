@@ -32,7 +32,7 @@ You may need to restart your system.
 Pull the repository into your working directory.   
 Now build the image using docker. Type this command in directory of the DockerFile
 ```Shell
-docker -t build ros .
+docker build .
 ```
 This should build the image. Now use 
 ```
@@ -44,3 +44,13 @@ Finally run the image using
 ```
 docker run -it container_id 
 ```
+To run a terminal in the same container :
+```
+docker exec -it container_id bash
+```
+Remember you'll have to source the environment variables for every new terminal CUURENTLY. This will be fixed in future.
+```
+cd catkin_ws
+source devel/setup.bash
+```
+
