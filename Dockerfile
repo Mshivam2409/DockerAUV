@@ -27,7 +27,6 @@ RUN sudo sh -c  'echo "deb http://packages.osrfoundation.org/gazebo/ubuntu `lsb_
     wget http://packages.osrfoundation.org/gazebo.key -O - | sudo apt-key add - 
 RUN sudo apt-get update  
 RUN sudo apt-get install -y libgazebo9 
-RUN sudo apt-get install libgazebo9 --fix-missing 
 RUN sudo apt-get install -y gazebo9 
 RUN sudo apt install -y ros-melodic-gazebo*
 RUN sudo apt install -y ros-melodic-xacro*
