@@ -26,7 +26,7 @@ The docker group will likely already be created, but you still need to add your 
 Start on Boot  
 Follow these instructions so that Docker and its services start automatically on boot:  
 https://docs.docker.com/install/linux/linux-postinstall/#configure-docker-to-start-on-boot  
-You may need to restart your system before starting the course material.  
+You may need to restart your system. 
 
 # Running the build
 Pull the repository into your working directory.   
