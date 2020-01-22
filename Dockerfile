@@ -40,6 +40,8 @@ RUN cd /catkin_ws  && \
     catkin_make -DCMAKE_BUILD_TYPE=Release -j8; exit 0 
 RUN cd /catkin_ws  && \
     /bin/bash -c "source devel/setup.bash"
-CMD [ "roscore"]
+CMD cd /catkin_ws && \
+    /bin/bash -c "source devel/setup.bash" && \
+     roscore
 
  
