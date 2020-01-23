@@ -30,17 +30,17 @@ You may need to restart your system.
 Pull the repository into your working directory.   
 Now build the image using docker. Type this command in directory of the DockerFile
 ```Shell
-docker build .
+docker build -t ros.
 ```
-This should build the image. Now use 
+This should build the image. Nos you can use use 
 ```
 docker ps
 ```
-to get the container id. Copy the container id. There won't be any need of container id after we start using docker hub.  
+to get the container id while some container is running. Copy the container id. There won't be any need of container id after we start using docker hub.  
 Finally run the image using
 
 ```
-docker run -it container_id 
+docker run -it ros
 ```
 To run a terminal in the same container :
 ```
