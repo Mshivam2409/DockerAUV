@@ -30,7 +30,7 @@ You may need to restart your system.
 Pull the repository into your working directory.   
 Now build the image using docker. Type this command in directory of the DockerFile
 ```Shell
-docker build -t ros.
+docker build -t ros .
 ```
 This should build the image. Nos you can use use 
 ```
