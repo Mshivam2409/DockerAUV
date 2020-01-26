@@ -34,12 +34,14 @@ RUN sudo apt install -y ros-melodic-roslint*
 RUN sudo apt install -y ros-melodic-pcl*
 RUN sudo apt install -y ros-melodic-tf*
 
+
 RUN cd /catkin_ws  && \
     . /opt/ros/melodic/setup.sh && \
     catkin_make -DCMAKE_BUILD_TYPE=Release -j8; exit 0 
 RUN cd /catkin_ws  && \
     /bin/bash -c "source devel/setup.bash"
 RUN echo "source /catkin_ws/devel/setup.bash" >> /root/.bashrc    
+RUN sudo apt-get install -y usbutils
 CMD cd /catkin_ws && \
     /bin/bash -c "source devel/setup.bash" && \
      roscore
